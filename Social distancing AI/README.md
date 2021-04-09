@@ -18,7 +18,6 @@ Deploying it on current surveillance systems and drones used by police to monito
 #### v2.0 output:
 ![](op2.gif)
 
-### V3.0 output (code coming soon)
 ## Features:
 * Get the areal time analytics such as:
    - Number of people in a particular area
@@ -27,26 +26,15 @@ Deploying it on current surveillance systems and drones used by police to monito
 * Doesn't collect any data of a particular person
 * Stores a video output for review
 
-## Things needed to be improved :
-* ~~Auto-calibration [For the given sample video, I've calibrated the model by simulating a 3D depth factor based on the camera position and orientation.]~~ (Check out v2.0)
-* Faster processing
-#### Please Note: angle factor is needed to be set between 0 to 1 for v2.0 according to the angle of camera (move towards one as angle becomes verticle)
 ## Installation:
 * Fork the repository and download the code.
+   -
+* Install all the required libraries:
+   -```pip install -r requirements.txt```
+   
 * Download the following files and place it in the same directory
    - https://github.com/pjreddie/darknet/blob/master/cfg/yolov3.cfg
    - https://pjreddie.com/media/files/yolov3.weights
 * For slower CPUs, use yolov3-tiny (link in the code comments)
 * Install all the dependenices
-* Run social_distancing_analyser.py or social_distancing_analyser 2.0.py
-
-### Credits:
-
-@article{yolov3,
-  title={YOLOv3: An Incremental Improvement},
-  author={Redmon, Joseph and Farhadi, Ali},
-  journal = {arXiv},
-  year={2018}
-}
-
-copyright © 2020 Ankush Chaudhari | All rights reserved
+* Run social_distancing_analyser.py 
