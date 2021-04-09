@@ -1,5 +1,5 @@
 # streamlit-face-mask-detector
-A simple [Streamlit](https://www.streamlit.io/) frontend for face mask detection in images using a pre-trained [Keras](https://keras.io/) CNN model + [OpenCV](https://opencv.org/) and model interpretability.  
+A simple [Streamlit](https://www.streamlit.io/) frontend for face mask detection in images using a self-trained [Tensorflow](https://www.tensorflow.org/) CNN model + [OpenCV](https://opencv.org/) and model interpretability.  
 ![alt text](https://github.com/virtualramblas/streamlit-face-mask-detector/raw/master/images/demo_image.PNG "Demo image")
 ## General info
 This example has been implemented as part of my evaluation of the Streamlit framework. It uses OpenCV to detect faces in the input images and a CNN as mask/no-mask binary classifier applied to the face ROI.  
