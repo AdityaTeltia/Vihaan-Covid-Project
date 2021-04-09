@@ -23,9 +23,9 @@ Deploying it on current surveillance systems and drones used by police to monito
 * Stores a video output for review
 
 ## Installation:
-* Fork the repository and download the code.
+* Clone the repository and download the code:<br>
    -```gh repo clone Anshnrag02/Vihaan-Covid-Project/Social%20distancing%20AI```
-* Install all the required libraries:
+* Install all the required libraries:<br>
    -```pip install -r requirements.txt```
    
 * Download the following files and place it in the same directory
