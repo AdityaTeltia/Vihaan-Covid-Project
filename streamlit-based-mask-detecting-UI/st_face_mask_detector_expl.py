@@ -91,7 +91,7 @@ if uploaded_image:
         sensitivity_occlusion_grid = explainer.explain(data, model, predicted_class, patch_size_value)
         st.image(sensitivity_occlusion_grid)
         
-file_ = open("/home/rzwitch/Desktop/giphy.gif", "rb")
+file_ = open("SocialAI.gif", "rb")
 contents = file_.read()
 data_url = base64.b64encode(contents).decode("utf-8")
 file_.close()
