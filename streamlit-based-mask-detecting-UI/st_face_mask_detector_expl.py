@@ -89,3 +89,4 @@ if uploaded_image:
         explainer = OcclusionSensitivity()
         sensitivity_occlusion_grid = explainer.explain(data, model, predicted_class, patch_size_value)
         st.image(sensitivity_occlusion_grid)
+st.vide(SocialAI)
