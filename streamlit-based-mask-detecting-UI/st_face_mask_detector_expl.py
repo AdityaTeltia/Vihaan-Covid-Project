@@ -7,6 +7,7 @@ import cv2
 import os
 from tf_explain.core.grad_cam import GradCAM
 from tf_explain.core.occlusion_sensitivity import OcclusionSensitivity
+import base64
 
 @st.cache(hash_funcs={cv2.dnn_Net: hash})
 def load_face_detector_and_model():
@@ -90,6 +91,12 @@ if uploaded_image:
         sensitivity_occlusion_grid = explainer.explain(data, model, predicted_class, patch_size_value)
         st.image(sensitivity_occlusion_grid)
         
-video_file = open("SocialAI.mp4", "rb")
-video_bytes = video_file.read()
-st.video(video_bytes)
+file_ = open("/home/rzwitch/Desktop/giphy.gif", "rb")
+contents = file_.read()
+data_url = base64.b64encode(contents).decode("utf-8")
+file_.close()
+
+st.markdown(
+    f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',
+    unsafe_allow_html=True,
+)
